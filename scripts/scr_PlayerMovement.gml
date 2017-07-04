@@ -5,7 +5,63 @@ right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 
-if(left || right)
+if((right || left) && (up || down))
+{
+    //poruszanie sie na skosy
+    if(right && up)
+    {
+        physics_apply_local_force(0, 0, playerSpeed, -playerSpeed);
+        //szybsze wychamowanie po zmianie zwrotu i kierunku
+        if(phy_speed_y > 0)
+        {
+            phy_speed_y -= 1;
+        }
+        if(phy_speed_x < 0)
+        {
+            phy_speed_x += .5;
+        }
+    }
+    else if(right && down)
+    {
+        physics_apply_local_force(0, 0, playerSpeed, playerSpeed);
+        //szybsze wychamowanie po zmianie zwrotu i kierunku
+        if(phy_speed_y < 0)
+        {
+            phy_speed_y += 1;
+        }
+        if(phy_speed_x < 0)
+        {
+            phy_speed_x += .5;
+        }
+    }
+    else if(left && down)
+    {
+        physics_apply_local_force(0, 0, -playerSpeed, playerSpeed);
+        //szybsze wychamowanie po zmianie zwrotu i kierunku
+        if(phy_speed_y < 0)
+        {
+            phy_speed_y += 1;
+        }
+        if(phy_speed_x > 0)
+        {
+            phy_speed_x -= .5;
+        }
+    }
+    else if(left && up)
+    {
+        physics_apply_local_force(0, 0, -playerSpeed, -playerSpeed);
+        //szybsze wychamowanie po zmianie zwrotu i kierunku
+        if(phy_speed_y > 0)
+        {
+            phy_speed_y -= 1;
+        }
+        if(phy_speed_x > 0)
+        {
+            phy_speed_x -= .5;
+        }
+    }
+}
+else if(left || right)
 {
     //poruszanie sie horyzontalnie
     if(left)
