@@ -7,6 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_player_concept</sprite>
+    <sprite>sprites\spr_player_right_concept</sprite>
+    <sprite>sprites\pr_player_left_concept</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -15,6 +19,8 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_view</object>
+    <object>objects\obj_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
