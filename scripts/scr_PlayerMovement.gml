@@ -1,9 +1,8 @@
 ///scr_PlayerMovement(playerSpeed)
-var playerSpeed = argument0;
-left = keyboard_check(vk_left);
-right = keyboard_check(vk_right);
-up = keyboard_check(vk_up);
-down = keyboard_check(vk_down);
+var playerSpeed = obj_player.spd;
+
+// skrypt ze sterowaniem
+scr_Input()
 
 if((right || left) && (up || down))
 {
@@ -155,3 +154,51 @@ if(phy_speed_y < -playerSpeed)
 {
     phy_speed_y = -playerSpeed;
 }
+
+// niedlugo przedstawie troche inne rozwiazanie. 
+
+// strerowanie sprite
+
+// tzreba jeszcze ustawic jaka animacja gdy porusza sie po skosie
+// do tego jest takie cos jak 'dir' -> ale musze sie tego jeszcze douczyc
+
+if (up)
+{
+    sprite_index = spr_player_up_concept
+    // predkosc powinna sie zmieniac wraz z przyspieszaiem ale zaimplementujemy to pozniej. potrzebna jest tez jakas animacja hamowania
+    image_speed = .2
+}
+if (down)
+{
+    sprite_index = spr_player_down_concept
+    image_speed = .2
+}
+if (left)
+{
+    sprite_index = spr_player_left_concept
+    image_speed  = .2
+}
+if (right)
+{
+    sprite_index = spr_player_right_concept
+    image_speed = .2
+}
+
+// zatrzymanie animacji
+if (!down && !up && !right && !left && phy_speed == 0)
+{
+    image_speed = 0;
+    
+    // gdy postac sie zatrzyma bedzie w latce animacji gdzie postac sie nie rudsza
+    image_index = 0;
+    
+}
+
+
+
+
+
+
+
+
+
