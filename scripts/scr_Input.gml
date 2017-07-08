@@ -5,3 +5,9 @@ up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 
 steleport = keyboard_check(vk_space);
+
+exitgame = keyboard_check_pressed(vk_escape);
+if(exitgame)
+{
+    game_end();
+}
