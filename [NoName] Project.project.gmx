@@ -24,6 +24,10 @@
       <script>scripts\scr_Input.gml</script>
       <script>scripts\scr_get_face.gml</script>
     </scripts>
+    <scripts name="Short teleport">
+      <script>scripts\scr_player_short_teleport.gml</script>
+      <script>scripts\scr_draw_pie_bar.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
