@@ -6,24 +6,29 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player_concept</sprite>
     <sprite>sprites\spr_player_up_concept</sprite>
     <sprite>sprites\spr_player_down_concept</sprite>
     <sprite>sprites\spr_player_right_concept</sprite>
     <sprite>sprites\spr_player_left_concept</sprite>
+    <sprite>sprites\spr_player_shadow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_PlayerMovement.gml</script>
-    <script>scripts\scr_Input.gml</script>
+    <scripts name="Player states">
+      <script>scripts\scr_player_move_state.gml</script>
+    </scripts>
+    <scripts name="Helper scripts">
+      <script>scripts\scr_Input.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_view</object>
     <object>objects\obj_solid</object>
+    <object>objects\obj_lifeform_parent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
