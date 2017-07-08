@@ -34,9 +34,18 @@ image_speed = 0;
 state = scr_player_move_state;
 
 // ustawienia testowe
-
+// dlugosc
+len = 0;
+// predkosc w poziomie
 hspd = 0;
+// predkosc w pionie
 vspd = 0;
+
+dir = 0;
+
+// kierunek dla sprite (bedzie mial 4 wartosci 4 kierunkow)
+// makra dla kierunkow
+face = RIGHT;
 </string>
           </argument>
         </arguments>

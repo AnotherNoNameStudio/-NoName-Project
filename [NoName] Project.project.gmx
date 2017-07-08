@@ -22,6 +22,7 @@
     </scripts>
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
+      <script>scripts\scr_get_face.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
