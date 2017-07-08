@@ -5,7 +5,7 @@ scr_Input();
 // osie x i y
 // klikanie right daje mu wartosc 1. tak samo jest z left. inaczej wartosc jest 0.
 // gdy edziemy klikali left to wartosc xaxis bedzie -1 itd.
-var xaxis = (right - left);
+/*var xaxis = (right - left);
 var yaxis = (down - up);
 
 // ustwianie kierunku
@@ -58,9 +58,9 @@ switch (face)
     case DOWN:
         sprite_index = spr_player_down_concept;
         break;
-}
+}*/
 
-/*
+
 var playerSpeed = obj_player.spd;
 
 if((right || left) && (up || down))
@@ -68,7 +68,7 @@ if((right || left) && (up || down))
     //poruszanie sie na skosy
     if(right && up)
     {
-        physics_apply_local_force(0, 0, playerSpeed, -playerSpeed);
+        physics_apply_local_force(0, 0, playerSpeed/2, -playerSpeed/2);
         //szybsze wychamowanie po zmianie zwrotu i kierunku
         if(phy_speed_y > 0)
         {
@@ -81,7 +81,7 @@ if((right || left) && (up || down))
     }
     else if(right && down)
     {
-        physics_apply_local_force(0, 0, playerSpeed, playerSpeed);
+        physics_apply_local_force(0, 0, playerSpeed/2, playerSpeed/2);
         //szybsze wychamowanie po zmianie zwrotu i kierunku
         if(phy_speed_y < 0)
         {
@@ -94,7 +94,7 @@ if((right || left) && (up || down))
     }
     else if(left && down)
     {
-        physics_apply_local_force(0, 0, -playerSpeed, playerSpeed);
+        physics_apply_local_force(0, 0, -playerSpeed/2, playerSpeed/2);
         //szybsze wychamowanie po zmianie zwrotu i kierunku
         if(phy_speed_y < 0)
         {
@@ -107,7 +107,7 @@ if((right || left) && (up || down))
     }
     else if(left && up)
     {
-        physics_apply_local_force(0, 0, -playerSpeed, -playerSpeed);
+        physics_apply_local_force(0, 0, -playerSpeed/2, -playerSpeed/2);
         //szybsze wychamowanie po zmianie zwrotu i kierunku
         if(phy_speed_y > 0)
         {
@@ -117,6 +117,23 @@ if((right || left) && (up || down))
         {
             phy_speed_x -= .5;
         }
+    }
+    //maksymalna predkosc przy skosach
+    if(phy_speed_x > playerSpeed)
+    {
+        phy_speed_x = playerSpeed;
+    }
+    if(phy_speed_x < -playerSpeed)
+    {
+        phy_speed_x = -playerSpeed;
+    }
+    if(phy_speed_y > playerSpeed)
+    {
+        phy_speed_y = playerSpeed;
+    }
+    if(phy_speed_y < -playerSpeed)
+    {
+        phy_speed_y = -playerSpeed;
     }
 }
 else if(left || right)
@@ -149,6 +166,15 @@ else if(left || right)
             phy_speed_y = 0;
         }
     }
+    //maksymalna predkosc horyzontalna
+    if(phy_speed_x > playerSpeed)
+    {
+        phy_speed_x = playerSpeed;
+    }
+    if(phy_speed_x < -playerSpeed)
+    {
+        phy_speed_x = -playerSpeed;
+    }
 }
 else if(up || down)
 {
@@ -180,6 +206,15 @@ else if(up || down)
             phy_speed_x = 0;
         }
     }
+    //maksymalna predkosc wertykalna
+    if(phy_speed_y > playerSpeed)
+    {
+        phy_speed_y = playerSpeed;
+    }
+    if(phy_speed_y < -playerSpeed)
+    {
+        phy_speed_y = -playerSpeed;
+    }
 }
 else
 {
@@ -194,24 +229,6 @@ else
     {
         phy_speed_y = 0;
     }
-}
-
-//maksymalna predkosc
-if(phy_speed_x > playerSpeed)
-{
-    phy_speed_x = playerSpeed;
-}
-if(phy_speed_x < -playerSpeed)
-{
-    phy_speed_x = -playerSpeed;
-}
-if(phy_speed_y > playerSpeed)
-{
-    phy_speed_y = playerSpeed;
-}
-if(phy_speed_y < -playerSpeed)
-{
-    phy_speed_y = -playerSpeed;
 }
 
 // niedlugo przedstawie troche inne rozwiazanie. 
@@ -252,13 +269,3 @@ if (!down && !up && !right && !left && phy_speed == 0)
     image_index = 0;
     
 }
-
-*/
-
-
-
-
-
-
-
-

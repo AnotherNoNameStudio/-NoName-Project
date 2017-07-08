@@ -1,4 +1,4 @@
-///scr_PlayerMovement(playerSpeed)
+///scr_PlayerMovement()
 var playerSpeed = obj_player.spd;
 
 // skrypt ze sterowaniem
@@ -193,7 +193,6 @@ if (!down && !up && !right && !left && phy_speed == 0)
     image_index = 0;
     
 }
-
 
 
 
