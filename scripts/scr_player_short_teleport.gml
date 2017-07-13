@@ -11,8 +11,7 @@ if(steleport)
     {
         st_value += (1/room_speed)*50;  // bar will be fullfilled in 2 seconds
         // moving marker in suitable direction
-        scr_get_face();
-        switch (face)
+        switch (last_face)
         {
             case RIGHT:
                 with(obj_marker)
