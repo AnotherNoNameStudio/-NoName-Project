@@ -11,34 +11,36 @@ if(steleport)
     {
         st_value += (1/room_speed)*50;  // bar will be fullfilled in 2 seconds
         // moving marker in suitable direction
-        scr_get_face()
-        if(face == 0) // up
+        scr_get_face();
+        switch (face)
         {
-            with(obj_marker)
-            {
-                obj_marker.y -= 1;
-            }
-        }
-        else if(face == 1) // right
-        {
-            with(obj_marker)
-            {
-                obj_marker.x += 1;
-            }
-        }
-        else if(face == 2) // down
-        {
-            with(obj_marker)
-            {
-                obj_marker.y += 1;
-            }
-        }
-        else if(face == 3) // left
-        {
-            with(obj_marker)
-            {
-                obj_marker.x -= 1;
-            }
+            case RIGHT:
+                with(obj_marker)
+                {
+                    obj_marker.x += 1;
+                }
+                break;
+                
+            case LEFT:
+                with(obj_marker)
+                {
+                    obj_marker.x -= 1;
+                }
+                break;
+                
+            case UP:
+                with(obj_marker)
+                {
+                    obj_marker.y -= 1;
+                }
+                break;
+                
+            case DOWN:
+                with(obj_marker)
+                {
+                    obj_marker.y += 1;
+                }
+                break;
         }
     }
 }

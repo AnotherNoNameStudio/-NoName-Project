@@ -20,6 +20,7 @@
   <scripts name="scripts">
     <scripts name="Player states">
       <script>scripts\scr_player_move_state.gml</script>
+      <script>scripts\scr_test_player.gml</script>
     </scripts>
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
