@@ -59,8 +59,8 @@ if(steleport_released)
         // shift player to position pointed by marker
         if(inst == noone)
         {
-            obj_player.x = x;
-            obj_player.y = y;
+            obj_player.phy_position_x = x;
+            obj_player.phy_position_y = y;
         }
         instance_destroy();
     }
