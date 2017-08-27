@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>/// ustawienia ogolne
-
+event_inherited();
 // predkosc bohatera
+
 spd = 5;
 image_speed = 0;
 // nie dajemy nawiasu poniewaz to wywola funkcje a my chcemy przypisac 'Id' funkcji
@@ -42,6 +43,8 @@ hspd = 0;
 vspd = 0;
 
 dir = 0;
+
+canHide = false
 
 // kierunek dla sprite (bedzie mial 4 wartosci 4 kierunkow)
 // makra dla kierunkow
@@ -70,6 +73,7 @@ face = RIGHT;
             <kind>1</kind>
             <string>/// wykonywanie skryptu poruszaia sie itd
 // wykonuje skrypt ktorego 'Id' przechowuje zmienna -&gt; state
+event_inherited();
 script_execute(state)
 
 </string>

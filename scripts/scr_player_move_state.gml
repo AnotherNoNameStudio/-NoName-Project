@@ -2,6 +2,12 @@
 // skrypt ze sterowaniem
 scr_Input();
 
+if (hide_key && hspd == 0  && vspd == 0 && canHide == true)
+{
+    visible = false
+    state = scr_player_hidden_state;
+}
+
 // osie x i y
 // klikanie right daje mu wartosc 1. tak samo jest z left. inaczej wartosc jest 0.
 // gdy edziemy klikali left to wartosc xaxis bedzie -1 itd.

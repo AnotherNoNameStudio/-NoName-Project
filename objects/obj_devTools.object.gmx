@@ -25,14 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///podstwowe ustawienia dla wszystkich zywych
-phy_fixed_rotation = true
+            <string>/// create 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,56 +48,9 @@ phy_fixed_rotation = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// control depth
-depth = -y;
+            <string>draw_text(32,32, "FPS: " + string(fps_real))
+draw_text(32,48, "alpha: " + string(obj_dayCycle.alpha))
 
-// wyjasnienie: jesli np: obj_player ma y wiekszy od innego obiektu to ma mniejszy depth
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_solid">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// kolzja z obj_solid
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// kolizzja z graczem
 </string>
           </argument>
         </arguments>

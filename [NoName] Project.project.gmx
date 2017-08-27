@@ -15,6 +15,8 @@
     <sprite>sprites\spr_player_shadow</sprite>
     <sprite>sprites\spr_barrel</sprite>
     <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_torch</sprite>
+    <sprite>sprites\spr_glow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -23,6 +25,7 @@
   <scripts name="scripts">
     <scripts name="Player states">
       <script>scripts\scr_player_move_state.gml</script>
+      <script>scripts\scr_player_hidden_state.gml</script>
     </scripts>
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
@@ -36,6 +39,9 @@
     <object>objects\obj_lifeform_parent</object>
     <object>objects\obj_barrel</object>
     <object>objects\obj_tree</object>
+    <object>objects\obj_devTools</object>
+    <object>objects\obj_dayCycle</object>
+    <object>objects\obj_torch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
