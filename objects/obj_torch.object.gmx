@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>glowSize = 1
+            <string>glowSize = 3
 </string>
           </argument>
         </arguments>

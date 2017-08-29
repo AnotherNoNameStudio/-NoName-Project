@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>obj_lifeform_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -34,6 +34,8 @@ image_speed = 0;
 // nie dajemy nawiasu poniewaz to wywola funkcje a my chcemy przypisac 'Id' funkcji
 state = scr_player_move_state;
 
+//scr_player_torch();
+
 // ustawienia testowe
 // dlugosc
 len = 0;
@@ -45,6 +47,8 @@ vspd = 0;
 dir = 0;
 
 canHide = false
+useTorch = false
+glowSize = 1
 
 // kierunek dla sprite (bedzie mial 4 wartosci 4 kierunkow)
 // makra dla kierunkow
@@ -76,12 +80,19 @@ face = RIGHT;
 event_inherited();
 script_execute(state)
 
+if useTorch == true
+{
+    var dif = choose(0.01, -0.01, 0);
+    glowSize += dif;
+    glowSize = clamp(glowSize, 0.9, 1.1);
+}
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="4">
+    <event eventtype="4" ename="obj_door">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -98,10 +109,14 @@ script_execute(state)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// korekta pozycji (fizyki)
-if object_exists(obj_player)
+            <string>/// przejscie przez do nastepnego rm
+
+if (room_exists(other.new_room))
 {
-phy_fixed_rotation = true;
+    room_goto(other.new_room);
+    x = other.new_x;
+    y = other.new_y;
+
 }
 </string>
           </argument>

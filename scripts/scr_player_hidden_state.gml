@@ -7,3 +7,8 @@ if (right || left || up || down)
     visible = true
     state = scr_player_move_state;
 }
+
+if torch_key
+{
+    useTorch =! useTorch
+}

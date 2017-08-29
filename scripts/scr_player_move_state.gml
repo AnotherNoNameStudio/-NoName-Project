@@ -65,3 +65,9 @@ switch (face)
         sprite_index = spr_player_down_concept;
         break;
 }
+
+if torch_key
+{
+    useTorch =! useTorch
+}
+

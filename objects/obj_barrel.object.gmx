@@ -113,7 +113,6 @@ if (isFocused == true)
     draw_text(x - 65, y - 60, "press 'Q' to hide")
 }
 
-draw_text(x - 5, y - 40,"" + string(isFocused))
 
 </string>
           </argument>
