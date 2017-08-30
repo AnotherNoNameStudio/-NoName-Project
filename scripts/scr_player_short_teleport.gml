@@ -7,7 +7,7 @@ if(steleport_pressed)
 {
     if(st_value == 0)
     {
-        instance_create(x, y + sprite_height/2, obj_marker);
+        instance_create(x, y, obj_marker);
     }
 }
 if(steleport)
