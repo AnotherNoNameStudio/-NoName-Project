@@ -48,16 +48,14 @@ if(steleport)
         }
     }
 }
-var inst;
 if(steleport_released)
 {
     st_value = 0;
     // check whether there is a space to shift
-    inst = collision_rectangle(x, y - sprite_height, x + sprite_width, y, obj_solid, false, true);
     with(obj_marker)
     {
         // shift player to position pointed by marker
-        if(inst == noone)
+        if(obj_marker.isCollision == noone)
         {
             obj_player.phy_position_x = x;
             obj_player.phy_position_y = y;
