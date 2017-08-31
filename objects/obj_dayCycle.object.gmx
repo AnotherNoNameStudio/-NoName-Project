@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///create day and night
 alpha = 0
-dayLength = 10; // ilosc sekund
+dayLength = 60; // ilosc sekund
 nightLength = 4;
 alarm[0] = room_speed * dayLength
 

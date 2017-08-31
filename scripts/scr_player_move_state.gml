@@ -22,10 +22,12 @@ dir = point_direction(0, 0, xaxis, yaxis);
 if (xaxis == 0 && yaxis == 0)
 {
     len = 0;
+    // tu
 }
 else
 {
     len = spd;
+    scr_get_face();
 }
 // ustwanianie predkosci dla osi
 // specjalne funkcje w gm do ustwaniania predkosci x i y 
@@ -39,30 +41,30 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 // kontrola sprite
-// sign zwraca albo 1 albo -1 
+
 image_speed = .3;
 if (len == 0)
 {
     image_index = 0;
 }
 
-scr_get_face();
+
 switch (face)
 {
     case RIGHT:
-        sprite_index = spr_player_right_concept;
+        sprite_index = spr_player_right;
         break;
         
     case LEFT:
-        sprite_index = spr_player_left_concept;
+        sprite_index = spr_player_left;
         break;
         
     case UP:
-        sprite_index = spr_player_up_concept;
+        sprite_index = spr_player_up;
         break;
         
     case DOWN:
-        sprite_index = spr_player_down_concept;
+        sprite_index = spr_player_down;
         break;
 }
 
@@ -70,4 +72,3 @@ if torch_key
 {
     useTorch =! useTorch
 }
-
