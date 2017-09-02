@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+<<<<<<< HEAD
     <sprites name="player_sprites">
       <sprite>sprites\spr_player_up</sprite>
       <sprite>sprites\spr_player_stand</sprite>
@@ -14,7 +15,6 @@
       <sprite>sprites\spr_player_left_no_e</sprite>
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_shadow</sprite>
-      <sprite>sprites\spr_marker</sprite>
     </sprites>
     <sprites name="environment_sprites">
       <sprite>sprites\spr_rock</sprite>
@@ -32,6 +32,16 @@
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
+=======
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_player_concept</sprite>
+    <sprite>sprites\spr_player_up_concept</sprite>
+    <sprite>sprites\spr_player_down_concept</sprite>
+    <sprite>sprites\spr_player_right_concept</sprite>
+    <sprite>sprites\spr_player_left_concept</sprite>
+    <sprite>sprites\spr_player_shadow</sprite>
+    <sprite>sprites\spr_marker</sprite>
+>>>>>>> Short-teleport
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -46,8 +56,11 @@
   <scripts name="scripts">
     <scripts name="Player states">
       <script>scripts\scr_player_move_state.gml</script>
-      <script>scripts\scr_test_player.gml</script>
+<<<<<<< HEAD
       <script>scripts\scr_player_hidden_state.gml</script>
+=======
+      <script>scripts\scr_test_player.gml</script>
+>>>>>>> Short-teleport
     </scripts>
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
@@ -61,6 +74,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
+<<<<<<< HEAD
     <objects name="environment_objects">
       <object>objects\obj_barrel</object>
       <object>objects\obj_tree</object>
@@ -77,9 +91,12 @@
       <object>objects\obj_view</object>
       <object>objects\obj_lifeform_parent</object>
       <object>objects\obj_dayCycle</object>
-      <object>objects\obj_marker</object>
       <object>objects\obj_darkness</object>
     </objects>
+=======
+    <object>objects\obj_lifeform_parent</object>
+    <object>objects\obj_marker</object>
+>>>>>>> Short-teleport
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

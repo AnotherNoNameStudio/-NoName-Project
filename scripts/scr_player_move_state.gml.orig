@@ -66,9 +66,13 @@ switch (face)
     case DOWN:
         sprite_index = spr_player_down;
         break;
+<<<<<<< HEAD
 }
 
 if torch_key
 {
     useTorch =! useTorch
 }
+=======
+}
+>>>>>>> Short-teleport
