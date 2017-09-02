@@ -32,6 +32,7 @@
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
+    <sprite>sprites\sprite20</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>

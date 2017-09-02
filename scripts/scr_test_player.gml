@@ -9,4 +9,5 @@ draw_text(view_wview[view_current] - width, view_hview[view_current] - 2*height,
 draw_text(view_wview[view_current] - width, view_hview[view_current] - 3*height, "vspd: " + string(vspd));
 draw_text(view_wview[view_current] - width, view_hview[view_current] - 4*height, "dir: " + string(dir));
 draw_text(view_wview[view_current] - width, view_hview[view_current] - 5*height, "face: " + string(face));
-draw_text(view_wview[view_current] - width, view_hview[view_current] - 6*height, "last_face: " + string(last_face));
+draw_text(view_wview[view_current] - width, view_hview[view_current] - 6*height, "steleport" + string(steleport));
+draw_text(view_wview[view_current] - width, view_hview[view_current] - 7*height, "steleport_pressed" + string(steleport_pressed));

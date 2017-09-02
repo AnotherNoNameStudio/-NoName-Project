@@ -1,10 +1,12 @@
-///scr_player_short_teleport(teleport, teleport_x, teleport_y)
+///scr_player_short_teleport()
 
-scr_Input();
+//scr_Input();
 
 // start of aiming a point to teleport
 if(steleport_pressed)
 {
+    image_speed = 0;
+    image_index = 0;
     if(st_value == 0)
     {
         instance_create(x, y, obj_marker);
@@ -12,11 +14,12 @@ if(steleport_pressed)
 }
 if(steleport)
 {
+    scr_Input();
     if(st_value < st_max)
     {
         st_value += (1/room_speed)*50;  // bar will be fullfilled in 2 seconds
         // moving marker in suitable direction
-        switch (last_face)
+        switch (face)
         {
             case RIGHT:
                 with(obj_marker)
@@ -62,4 +65,5 @@ if(steleport_released)
         }
         instance_destroy();
     }
+    state = scr_player_move_state;
 }

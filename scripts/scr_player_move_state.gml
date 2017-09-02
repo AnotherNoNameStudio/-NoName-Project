@@ -8,6 +8,13 @@ if (hide_key && hspd == 0  && vspd == 0 && canHide == true)
     state = scr_player_hidden_state;
 }
 
+if (steleport_pressed)
+{
+    image_index = 0;
+    image_speed = 0;
+    state = scr_player_short_teleport;
+}
+
 // osie x i y
 // klikanie right daje mu wartosc 1. tak samo jest z left. inaczej wartosc jest 0.
 // gdy edziemy klikali left to wartosc xaxis bedzie -1 itd.
