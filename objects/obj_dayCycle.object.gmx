@@ -136,7 +136,7 @@ else if alpha &gt;= 0.7
     surface_reset_target();
     draw_surface_ext(nightCycleSurf, 0, 0, 1, 1, 0, c_white, alpha);
 }
-else
+else if room == rm_main
 {
     nightCycleSurf = surface_create(room_width, room_height)
 }

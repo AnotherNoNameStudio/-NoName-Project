@@ -77,7 +77,7 @@ darknessSurface = surface_create(room_width, room_height);
     surface_reset_target();
     draw_surface_ext(darknessSurface, 0, 0, 1, 1, 0, c_white, alpha);
 }
-else
+else if room == rm_2
 {
     darknessSurface = surface_create(room_width, room_height);
 }
