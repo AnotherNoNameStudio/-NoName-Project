@@ -71,9 +71,9 @@
     <instance objName="obj_box_wood" x="448" y="512" name="inst_C1A68943" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box_wood" x="480" y="512" name="inst_EC034FE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box_wood" x="448" y="544" name="inst_1BA8E25F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="256" y="544" name="inst_E565C867" locked="0" code="new_room = rm_main&#xA;new_x = 2208&#xA;new_y = 1568&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_darkness" x="320" y="256" name="inst_B7F00C09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_view" x="288" y="256" name="inst_FFE405B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="256" y="544" name="inst_E565C867" locked="0" code="new_room = rm_main&#xA;new_x = 2230&#xA;new_y = 1568&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_view" x="256" y="320" name="inst_F0F8BA60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_darkness" x="320" y="320" name="inst_C3A04BE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tile_floor" x="288" y="512" w="32" h="32" xo="0" yo="0" id="10000293" name="inst_506106C3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

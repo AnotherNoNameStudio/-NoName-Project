@@ -3,12 +3,14 @@ switch (mpos)
     case 0:
     {
         global.pause = 0;
+        instance_activate_object(obj_dayCycle);
         //audio_pause_sound(sn_pause);
         break;
     }
      case 1:
     {
         global.pause = 0;
+        instance_activate_object(obj_dayCycle);
         //audio_pause_sound(sn_pause);
         break;
     }

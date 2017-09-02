@@ -86,6 +86,7 @@
       <object>objects\obj_marker</object>
       <object>objects\obj_darkness</object>
       <object>objects\obj_pause</object>
+      <object>objects\obj_transition</object>
     </objects>
   </objects>
   <rooms name="rooms">

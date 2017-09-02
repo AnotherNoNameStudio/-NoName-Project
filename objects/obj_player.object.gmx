@@ -86,6 +86,30 @@ st_transparency = 1;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// ustawienia dla transition
+other_new_x = 0;
+other_new_y = 0;
+other_new_room = noone;
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -149,10 +173,24 @@ if useTorch == true
 
 if (room_exists(other.new_room))
 {
-    room_goto(other.new_room);
-    x = other.new_x;
-    y = other.new_y;
-
+    spd = 0;
+    other_new_y = other.new_y;
+    other_new_x = other.new_x;
+    other_new_room = other.new_room;
+    
+    instance_create(x, y, obj_transition);
+    
+      //spd = 0
+      /*
+    if (obj_transition.ready == true)
+    {
+        room_goto(other.new_room);
+        x = other.new_x;
+        y = other.new_y;
+        
+        spd = 5
+    }
+    */
 }
 </string>
           </argument>

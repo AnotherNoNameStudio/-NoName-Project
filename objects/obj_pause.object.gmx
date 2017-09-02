@@ -179,7 +179,7 @@ if (global.pause == 0)
 else if (global.pause = 1)
 {
     global.pause = 0;
-    instance_activate_object(obj_dayCycle)
+    instance_activate_object(obj_dayCycle);
 }
 </string>
           </argument>

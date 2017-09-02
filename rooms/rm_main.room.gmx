@@ -98,7 +98,7 @@
     <instance objName="obj_rock_2" x="2284" y="1608" name="inst_6A9B481F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock_2" x="2292" y="1584" name="inst_073EDA32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock_2" x="2256" y="1553" name="inst_9CB6D260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_view" x="704" y="352" name="inst_138B2174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_view" x="2304" y="1184" name="inst_138B2174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="608" y="256" name="inst_9139AE25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

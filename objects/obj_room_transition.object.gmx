@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000000</depth>
-  <persistent>-1</persistent>
+  <depth>0</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// init
-alpha = 0;
-amount = 0.05;
-ready = false;
-back = false;
+            <string>fade_time = 1; // sekundy
+next_room = false;
+fade_in = true;
+rectangle_alpha = 1;
+d_alpha = room_height / (0.5 * fade_time * room_speed);
 </string>
           </argument>
         </arguments>
@@ -52,32 +52,23 @@ back = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-if alpha &lt;= 1 and back == false
+            <string>if (rectangle_alpha &gt; 0 &amp;&amp; fade_in)
 {
-    alpha += amount;
+    rectangle_alpha -= d_alpha;
+}
+else
+{
+    rectangle_alpha += d_alpha;
+    fade_in = false;
+    next_room = true;
 }
 
-if alpha &gt;= 0.99 &amp;&amp; back == false
+if (next_room &amp;&amp; rectangle_alpha == 1)
 {
-    ready = true;
-    back = true; 
-    room_goto(obj_player.other_new_room);
-    obj_player.x = obj_player.other_new_x;
-    obj_player.y = obj_player.other_new_y;
-    
-}
-
-if (back == true &amp;&amp; alpha &gt; 0)
-{
-    alpha -= amount;
-}
-
-if (back == true and alpha == 0)
-{
-    obj_player.spd = 5;
-    instance_destroy();
+    //room_goto(other.new_room);
+    room_goto_next()
+    obj_player.x = other.new_x;
+    obj_player.y = other.new_y;    
 }
 </string>
           </argument>
@@ -101,14 +92,10 @@ if (back == true and alpha == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// draw fade
-
-
-draw_set_colour(c_black);
-draw_set_alpha(alpha);
-draw_rectangle(0, 0, room_width, room_height, false);
-
-
+            <string>draw_set_color(c_black);
+draw_set_alpha(rectangle_alpha);
+draw_rectangle(0, 0, room_height, room_width, false);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>
