@@ -107,6 +107,13 @@ st_transparency = 1;
             <string>/// wykonywanie skryptu poruszaia sie itd
 // wykonuje skrypt ktorego 'Id' przechowuje zmienna -&gt; state
 event_inherited();
+
+if global.pause
+{
+    image_speed = 0;
+    exit;
+}
+
 script_execute(state)
 
 if useTorch == true

@@ -31,6 +31,7 @@
       <sprite>sprites\spr_glow_2</sprite>
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_arrow</sprite>
     </sprites>
     <sprite>sprites\sprite20</sprite>
   </sprites>
@@ -53,12 +54,16 @@
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
       <script>scripts\scr_get_face.gml</script>
+      <script>scripts\scr_pause.gml</script>
     </scripts>
     <scripts name="Short teleport">
       <script>scripts\scr_player_short_teleport.gml</script>
       <script>scripts\scr_draw_pie_bar.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_pause</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
@@ -80,6 +85,7 @@
       <object>objects\obj_dayCycle</object>
       <object>objects\obj_marker</object>
       <object>objects\obj_darkness</object>
+      <object>objects\obj_pause</object>
     </objects>
   </objects>
   <rooms name="rooms">
