@@ -99,6 +99,7 @@
     <instance objName="obj_rock_2" x="2284" y="1608" name="inst_6A9B481F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock_2" x="2292" y="1584" name="inst_073EDA32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_rock_2" x="2256" y="1553" name="inst_9CB6D260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pause" x="608" y="256" name="inst_9139AE25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_tile_water" x="1952" y="1376" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_4508C40A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

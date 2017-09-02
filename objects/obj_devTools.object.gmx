@@ -48,16 +48,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !object_exists(obj_darkness)
-{
+            <string>
     draw_text(32,32, "FPS: " + string(fps_real))
-    draw_text(32,48, "alpha: " + string(obj_dayCycle.alpha))
-}
-else
-{
-    draw_text_colour(32, 32, "FPS: " + string(fps_real), 256, 0, 0, 0 , 1);
-    draw_text_colour(32,48, "alpha: " + string(obj_dayCycle.alpha), 256, 0, 0, 0 , 1);
-}
+    
+    if (global.pause == 0)
+    {
+        draw_text(32,64, "alpha: " + string(obj_dayCycle.alpha))
+    }
+
+
 </string>
           </argument>
         </arguments>

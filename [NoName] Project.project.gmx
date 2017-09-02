@@ -30,6 +30,7 @@
       <sprite>sprites\spr_glow_2</sprite>
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_arrow</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -50,8 +51,12 @@
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
       <script>scripts\scr_get_face.gml</script>
+      <script>scripts\scr_pause.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_pause</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
@@ -72,6 +77,7 @@
       <object>objects\obj_lifeform_parent</object>
       <object>objects\obj_dayCycle</object>
       <object>objects\obj_darkness</object>
+      <object>objects\obj_pause</object>
     </objects>
   </objects>
   <rooms name="rooms">
