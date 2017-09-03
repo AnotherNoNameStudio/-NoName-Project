@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// init
 alpha = 0;
-amount = 0.05;
+amount = 0.1;
 ready = false;
 back = false;
 </string>
@@ -69,12 +69,12 @@ if self.alpha &gt;= 0.99 &amp;&amp; back == false
     
 }
 
-if (back == true &amp;&amp; alpha &gt;= 0.5)
+if (back == true &amp;&amp; alpha &gt;= 0)
 {
     obj_transition.alpha -= amount;
 }
 
-if (back == true and obj_transition.alpha == 0.5)
+if (back == true and obj_transition.alpha == 0)
 {
     obj_player.spd = 5;
     instance_destroy();
