@@ -69,7 +69,7 @@ darknessSurface = surface_create(room_width, room_height);
             with(obj_player)
             {
                 draw_set_blend_mode(bm_src_color);
-                draw_sprite_ext(spr_glow, 0, x, y, glowSize, glowSize, 0, c_white, 1);
+                draw_sprite_ext(spr_player_torch_glow, 0, x, y, glowSize, glowSize, 0, c_white, 1);
                 draw_set_blend_mode(bm_normal);
             }
         }

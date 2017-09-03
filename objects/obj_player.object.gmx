@@ -46,7 +46,8 @@ vspd = 0;
 
 dir = 0;
 
-canHide = false
+canHide = false // czy moze sie schowac
+isHidden = false // czy postac jest ukryta
 useTorch = false
 glowSize = 1
 
@@ -131,12 +132,12 @@ other_new_room = noone;
             <string>/// wykonywanie skryptu poruszaia sie itd
 // wykonuje skrypt ktorego 'Id' przechowuje zmienna -&gt; state
 event_inherited();
-
 if global.pause
 {
     image_speed = 0;
     exit;
 }
+
 
 script_execute(state)
 
@@ -279,6 +280,7 @@ scr_draw_pie_bar(st_x, st_y, st_value, st_max, st_colour, st_radius, st_transpar
           <argument>
             <kind>1</kind>
             <string>/// rysowanie cienia
+draw_set_alpha(1);
 draw_sprite(spr_player_shadow, image_index, x, y);
 
 // rysowanie postaci

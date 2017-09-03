@@ -48,7 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>    draw_set_alpha(1);
+    draw_set_colour(c_white);
+    draw_set_font(fnt_pause);
+    font_get_size(8);
     draw_text(32,32, "FPS: " + string(fps_real))
     
     if (global.pause == 0)

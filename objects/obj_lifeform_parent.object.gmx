@@ -52,6 +52,7 @@
             <string>/// control depth
 depth = -y;
 
+
 // wyjasnienie: jesli np: obj_player ma y wiekszy od innego obiektu to ma mniejszy depth
 </string>
           </argument>

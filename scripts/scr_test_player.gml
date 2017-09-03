@@ -1,9 +1,10 @@
 ///scr_test_player
 //method is showing player's fields, like face, dir, speed, etc. 
-var width = 20;
-var height = 20;
+var width = - 500;
+var height = - 30;
 
-draw_set_colour(c_blue);
+
+draw_set_colour(c_white);
 draw_text(view_wview[view_current] - width, view_hview[view_current] - height, "spd: " + string(spd));
 draw_text(view_wview[view_current] - width, view_hview[view_current] - 2*height, "hspd: " + string(hspd));
 draw_text(view_wview[view_current] - width, view_hview[view_current] - 3*height, "vspd: " + string(vspd));

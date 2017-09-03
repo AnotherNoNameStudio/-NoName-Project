@@ -32,8 +32,10 @@
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_player_torch_glow</sprite>
     </sprites>
-    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\spr_enemy_copper_colossus_right</sprite>
+    <sprite>sprites\spr_enemy_copper_collosus_left</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -48,18 +50,23 @@
   <scripts name="scripts">
     <scripts name="Player states">
       <script>scripts\scr_player_move_state.gml</script>
-      <script>scripts\scr_test_player.gml</script>
       <script>scripts\scr_player_hidden_state.gml</script>
     </scripts>
     <scripts name="Helper scripts">
       <script>scripts\scr_Input.gml</script>
       <script>scripts\scr_get_face.gml</script>
       <script>scripts\scr_pause.gml</script>
+      <script>scripts\scr_test_player.gml</script>
     </scripts>
     <scripts name="Short teleport">
       <script>scripts\scr_player_short_teleport.gml</script>
       <script>scripts\scr_draw_pie_bar.gml</script>
     </scripts>
+    <script>scripts\scr_enemy_idle_state.gml</script>
+    <script>scripts\scr_enemy_wander_state.gml</script>
+    <script>scripts\scr_enemy_chase_state.gml</script>
+    <script>scripts\scr_enemy_choose_next_state.gml</script>
+    <script>scripts\scr_check_for_player.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_pause</font>
@@ -88,6 +95,7 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_transition</object>
     </objects>
+    <object>objects\obj_enemy_copper_collosus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
