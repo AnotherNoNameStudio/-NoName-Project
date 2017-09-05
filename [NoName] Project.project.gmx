@@ -100,6 +100,7 @@
       <object>objects\obj_transition</object>
     </objects>
     <object>objects\obj_enemy_copper_collosus</object>
+    <object>objects\obj_inventory</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
