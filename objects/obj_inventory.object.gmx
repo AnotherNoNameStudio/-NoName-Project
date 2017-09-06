@@ -88,7 +88,7 @@ for (i = 0; i &lt; maxItems; i += 1)
         draw_sprite(spr_border, 0, x1+24+(i * 40), y2-24);
         if(global.inventory[i] != -1)
         {
-            draw_sprite(spr_items, global.inventory[i],  0, x1 + 24 + (i * 40), y2-24);
+            draw_sprite(spr_items, global.inventory[i], x1+24+(i * 40), y2-24);
         }
     }
 }

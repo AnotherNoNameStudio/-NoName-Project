@@ -66,6 +66,9 @@
       <script>scripts\scr_player_short_teleport.gml</script>
       <script>scripts\scr_draw_pie_bar.gml</script>
     </scripts>
+    <scripts name="Inventory">
+      <script>scripts\scr_itempickup.gml</script>
+    </scripts>
     <script>scripts\scr_enemy_idle_state.gml</script>
     <script>scripts\scr_enemy_wander_state.gml</script>
     <script>scripts\scr_enemy_chase_state.gml</script>
