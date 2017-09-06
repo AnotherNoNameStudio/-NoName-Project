@@ -70,6 +70,8 @@
       <script>scripts\scr_itempickup.gml</script>
       <script>scripts\scr_itemdrop.gml</script>
       <script>scripts\scr_itemcheck.gml</script>
+      <script>scripts\scr_itempickup_slot.gml</script>
+      <script>scripts\scr_itemdrop_slot.gml</script>
     </scripts>
     <script>scripts\scr_enemy_idle_state.gml</script>
     <script>scripts\scr_enemy_wander_state.gml</script>
@@ -104,8 +106,12 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_transition</object>
     </objects>
+    <objects name="inventory_objects">
+      <object>objects\obj_inventory</object>
+      <object>objects\obj_inventory_button</object>
+      <object>objects\obj_mouseitem</object>
+    </objects>
     <object>objects\obj_enemy_copper_collosus</object>
-    <object>objects\obj_inventory</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

@@ -1,3 +1,4 @@
+//scr_itempickup();
 for (i = 0; i < maxItems; i++)
 {
     if (global.inventory[i] == -1)

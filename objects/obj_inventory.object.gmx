@@ -41,7 +41,13 @@ maxItems = 5;
 for (i = 0; i &lt; maxItems; i += 1)
 {
     global.inventory[i] = -1;
+    button[i] = instance_create(0, 0, obj_inventory_button);
+    button[i].slot = i;
 }
+
+globalvar mouseItem;
+mouseItem = -1;
+instance_create(0, 0, obj_mouseitem);
 </string>
           </argument>
         </arguments>
@@ -85,11 +91,12 @@ for (i = 0; i &lt; maxItems; i += 1)
     
     for (i = 0; i &lt; maxItems; i++)
     {
-        draw_sprite(spr_border, 0, x1+24+(i * 40), y2-24);
-        if(global.inventory[i] != -1)
-        {
-            draw_sprite(spr_items, global.inventory[i], x1+24+(i * 40), y2-24);
-        }
+        var ix = x1+24+(i * 40);
+        var iy = y2-24;
+        
+        draw_sprite(spr_border, 0, ix, iy);
+        button[i].x = ix;
+        button[i].y = iy;
     }
 }
 </string>
