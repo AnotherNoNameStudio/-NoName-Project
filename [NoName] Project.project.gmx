@@ -36,6 +36,8 @@
     </sprites>
     <sprite>sprites\spr_enemy_copper_colossus_right</sprite>
     <sprite>sprites\spr_enemy_copper_collosus_left</sprite>
+    <sprite>sprites\sprite24</sprite>
+    <sprite>sprites\spr_building</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -45,6 +47,8 @@
     <background>background\bg_tile_floor2</background>
     <background>background\bg_tile_floor_3</background>
     <background>background\bg_lile_smudge</background>
+    <background>background\bg_church</background>
+    <background>background\bg_rm3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -84,6 +88,7 @@
       <object>objects\obj_box_cyber_1</object>
       <object>objects\obj_torch</object>
       <object>objects\obj_door</object>
+      <object>objects\obj_building</object>
     </objects>
     <objects name="mechanics_objects">
       <object>objects\obj_devTools</object>
@@ -95,11 +100,14 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_transition</object>
     </objects>
-    <object>objects\obj_enemy_copper_collosus</object>
+    <objects name="enemies">
+      <object>objects\obj_enemy_copper_collosus</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
     <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
