@@ -53,6 +53,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player states">
+      <scripts name="Short teleport">
+        <script>scripts\scr_player_short_teleport.gml</script>
+        <script>scripts\scr_draw_pie_bar.gml</script>
+      </scripts>
       <script>scripts\scr_player_move_state.gml</script>
       <script>scripts\scr_player_hidden_state.gml</script>
     </scripts>
@@ -62,15 +66,13 @@
       <script>scripts\scr_pause.gml</script>
       <script>scripts\scr_test_player.gml</script>
     </scripts>
-    <scripts name="Short teleport">
-      <script>scripts\scr_player_short_teleport.gml</script>
-      <script>scripts\scr_draw_pie_bar.gml</script>
+    <scripts name="Enemy_scripts">
+      <script>scripts\scr_enemy_idle_state.gml</script>
+      <script>scripts\scr_enemy_wander_state.gml</script>
+      <script>scripts\scr_enemy_chase_state.gml</script>
+      <script>scripts\scr_enemy_choose_next_state.gml</script>
+      <script>scripts\scr_check_for_player.gml</script>
     </scripts>
-    <script>scripts\scr_enemy_idle_state.gml</script>
-    <script>scripts\scr_enemy_wander_state.gml</script>
-    <script>scripts\scr_enemy_chase_state.gml</script>
-    <script>scripts\scr_enemy_choose_next_state.gml</script>
-    <script>scripts\scr_check_for_player.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_pause</font>
