@@ -36,6 +36,8 @@
     </sprites>
     <sprite>sprites\spr_enemy_copper_colossus_right</sprite>
     <sprite>sprites\spr_enemy_copper_collosus_left</sprite>
+    <sprite>sprites\sprite24</sprite>
+    <sprite>sprites\spr_building</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -45,10 +47,16 @@
     <background>background\bg_tile_floor2</background>
     <background>background\bg_tile_floor_3</background>
     <background>background\bg_lile_smudge</background>
+    <background>background\bg_church</background>
+    <background>background\bg_rm3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player states">
+      <scripts name="Short teleport">
+        <script>scripts\scr_player_short_teleport.gml</script>
+        <script>scripts\scr_draw_pie_bar.gml</script>
+      </scripts>
       <script>scripts\scr_player_move_state.gml</script>
       <script>scripts\scr_player_hidden_state.gml</script>
     </scripts>
@@ -58,15 +66,13 @@
       <script>scripts\scr_pause.gml</script>
       <script>scripts\scr_test_player.gml</script>
     </scripts>
-    <scripts name="Short teleport">
-      <script>scripts\scr_player_short_teleport.gml</script>
-      <script>scripts\scr_draw_pie_bar.gml</script>
+    <scripts name="Enemy_scripts">
+      <script>scripts\scr_enemy_idle_state.gml</script>
+      <script>scripts\scr_enemy_wander_state.gml</script>
+      <script>scripts\scr_enemy_chase_state.gml</script>
+      <script>scripts\scr_enemy_choose_next_state.gml</script>
+      <script>scripts\scr_check_for_player.gml</script>
     </scripts>
-    <script>scripts\scr_enemy_idle_state.gml</script>
-    <script>scripts\scr_enemy_wander_state.gml</script>
-    <script>scripts\scr_enemy_chase_state.gml</script>
-    <script>scripts\scr_enemy_choose_next_state.gml</script>
-    <script>scripts\scr_check_for_player.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_pause</font>
@@ -84,6 +90,7 @@
       <object>objects\obj_box_cyber_1</object>
       <object>objects\obj_torch</object>
       <object>objects\obj_door</object>
+      <object>objects\obj_building</object>
     </objects>
     <objects name="mechanics_objects">
       <object>objects\obj_devTools</object>
@@ -95,11 +102,14 @@
       <object>objects\obj_pause</object>
       <object>objects\obj_transition</object>
     </objects>
-    <object>objects\obj_enemy_copper_collosus</object>
+    <objects name="enemies">
+      <object>objects\obj_enemy_copper_collosus</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
     <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
