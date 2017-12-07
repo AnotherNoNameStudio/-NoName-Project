@@ -38,6 +38,7 @@
     <sprite>sprites\spr_enemy_copper_collosus_left</sprite>
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\spr_building</sprite>
+    <sprite>sprites\spr_hitbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>
@@ -58,6 +59,7 @@
         <script>scripts\scr_draw_pie_bar.gml</script>
       </scripts>
       <script>scripts\scr_player_move_state.gml</script>
+      <script>scripts\scr_player_attack_state_melee.gml</script>
       <script>scripts\scr_player_hidden_state.gml</script>
     </scripts>
     <scripts name="Helper scripts">
@@ -93,7 +95,9 @@
       <object>objects\obj_building</object>
     </objects>
     <objects name="mechanics_objects">
+      <object>objects\obj_damage</object>
       <object>objects\obj_devTools</object>
+      <object>objects\obj_to_destroy_enviroment</object>
       <object>objects\obj_view</object>
       <object>objects\obj_lifeform_parent</object>
       <object>objects\obj_dayCycle</object>

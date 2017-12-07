@@ -51,6 +51,9 @@ isHidden = false // czy postac jest ukryta
 useTorch = false
 glowSize = 1
 
+// zmienna ktora mowi czy gracz atakuje
+attacked = false;
+
 // kierunek dla sprite (bedzie mial 4 wartosci 4 kierunkow)
 // makra dla kierunkow
 face = RIGHT;
@@ -192,6 +195,33 @@ if (room_exists(other.new_room))
         spd = 5
     }
     */
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (state == scr_player_attack_state_melee)
+{
+    state = scr_player_move_state;
+    attacked = false;
 }
 </string>
           </argument>

@@ -8,6 +8,7 @@ torch_key = keyboard_check_pressed(ord('T'))
 steleport_released = keyboard_check_released(vk_space);
 steleport_pressed = keyboard_check_pressed(vk_space);
 steleport = keyboard_check(vk_space);
+melee_attack_key = keyboard_check_pressed(ord('M'))
 
 exitgame = keyboard_check_pressed(vk_escape);
 if(exitgame)

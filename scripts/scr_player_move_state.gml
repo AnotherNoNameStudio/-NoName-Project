@@ -15,6 +15,11 @@ if (steleport_pressed)
     state = scr_player_short_teleport;
 }
 
+if (melee_attack_key)
+{
+    state = scr_player_attack_state_melee;
+}
+
 // osie x i y
 // klikanie right daje mu wartosc 1. tak samo jest z left. inaczej wartosc jest 0.
 // gdy edziemy klikali left to wartosc xaxis bedzie -1 itd.
