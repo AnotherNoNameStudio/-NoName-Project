@@ -52,11 +52,11 @@
     draw_set_colour(c_white);
     draw_set_font(fnt_pause);
     font_get_size(8);
-    draw_text(32,32, "FPS: " + string(fps_real))
+    draw_text(1790,32, "FPS: " + string(fps_real))
     
     if (global.pause == 0)
     {
-        draw_text(32,64, "alpha: " + string(obj_dayCycle.alpha))
+        draw_text(1790,64, "alpha: " + string(obj_dayCycle.alpha))
     }
 
   

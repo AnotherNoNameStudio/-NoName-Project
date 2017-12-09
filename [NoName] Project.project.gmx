@@ -15,6 +15,7 @@
       <sprite>sprites\spr_player_down</sprite>
       <sprite>sprites\spr_player_shadow</sprite>
       <sprite>sprites\spr_marker</sprite>
+      <sprite>sprites\spr_player_attack_down</sprite>
     </sprites>
     <sprites name="environment_sprites">
       <sprite>sprites\spr_rock</sprite>
@@ -26,6 +27,7 @@
       <sprite>sprites\spr_barrel</sprite>
       <sprite>sprites\spr_torch</sprite>
       <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_building</sprite>
     </sprites>
     <sprites name="function_sprites">
       <sprite>sprites\spr_glow_2</sprite>
@@ -33,12 +35,11 @@
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_player_torch_glow</sprite>
+      <sprite>sprites\spr_hitbox</sprite>
     </sprites>
     <sprite>sprites\spr_enemy_copper_colossus_right</sprite>
     <sprite>sprites\spr_enemy_copper_collosus_left</sprite>
     <sprite>sprites\sprite24</sprite>
-    <sprite>sprites\spr_building</sprite>
-    <sprite>sprites\spr_hitbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_tile_water</background>

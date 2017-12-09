@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///init 
+event_inherited();
 durability = 1; // ilosc uderzen ktora wytrzyma obj
 </string>
           </argument>
@@ -49,7 +50,8 @@ durability = 1; // ilosc uderzen ktora wytrzyma obj
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (durability &lt;= 0)
+            <string>event_inherited();
+if (durability &lt;= 0)
 {
     instance_destroy();
 }

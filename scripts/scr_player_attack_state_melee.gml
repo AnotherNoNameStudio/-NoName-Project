@@ -4,7 +4,7 @@
 switch (sprite_index)
 {
     case spr_player_down:
-        sprite_index = spr_player_down; 
+        sprite_index = spr_player_attack_down; 
         break;
         
     case spr_player_up:
@@ -21,15 +21,16 @@ switch (sprite_index)
 }
 
 // wybor klatki podczas ktorej powstanie obj_damage
-if (image_index >= 3 && attacked == false)
+if (image_index >= 4 && attacked == false)
 {
+    image_speed = .4
     var xx = 0;
     var yy = 0;
 
     switch (sprite_index)
     { // tu powinny byc spritez atakiem
     
-        case spr_player_down:
+        case spr_player_attack_down:
             xx = x;
             yy = y + 16;
             break;
