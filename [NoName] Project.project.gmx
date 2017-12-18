@@ -16,6 +16,8 @@
       <sprite>sprites\spr_player_shadow</sprite>
       <sprite>sprites\spr_marker</sprite>
       <sprite>sprites\spr_player_attack_down</sprite>
+      <sprite>sprites\spr_player_attack_left</sprite>
+      <sprite>sprites\spr_player_attack_right</sprite>
     </sprites>
     <sprites name="environment_sprites">
       <sprite>sprites\spr_rock</sprite>

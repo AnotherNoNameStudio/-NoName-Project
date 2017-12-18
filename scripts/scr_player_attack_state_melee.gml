@@ -12,11 +12,11 @@ switch (sprite_index)
         break;
         
     case spr_player_left:
-        sprite_index = spr_player_left; 
+        sprite_index = spr_player_attack_left; 
         break;
         
     case spr_player_right:
-        sprite_index = spr_player_right; 
+        sprite_index = spr_player_attack_right; 
         break;
 }
 
@@ -40,12 +40,12 @@ if (image_index >= 4 && attacked == false)
            yy = y - 16;
             break;
             
-        case spr_player_left:
+        case spr_player_attack_left:
             xx = x - 16;
             yy = y + 4;
             break;
             
-        case spr_player_right:
+        case spr_player_attack_right:
             xx = x + 16;
             yy = y + 4;
             break;
