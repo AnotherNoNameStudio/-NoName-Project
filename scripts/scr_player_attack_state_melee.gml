@@ -8,7 +8,7 @@ switch (sprite_index)
         break;
         
     case spr_player_up:
-        sprite_index = spr_player_up; 
+        sprite_index = spr_player_attack_up; 
         break;
         
     case spr_player_left:
@@ -35,7 +35,7 @@ if (image_index >= 4 && attacked == false)
             yy = y + 16;
             break;
             
-        case spr_player_up:
+        case spr_player_attack_up:
            xx = x;
            yy = y - 16;
             break;
